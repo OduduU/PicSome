@@ -16,12 +16,20 @@ function Header() {
 	
 	return (
 		<header>
-			<h2>
+			<h1>
 				<Link to="/">Pic Some</Link>
-			</h2>
-			<Link to="/cart">
-				{cartIcon()}
-			</Link>
+			</h1>
+			<ul>
+				<li>
+					<Link to="/register">Register</Link>
+				</li>
+				<li>
+					<Link to="/Login">Login</Link>
+				</li>
+				<li>
+					<Link to="/cart">{cartIcon()}</Link>
+				</li>
+			</ul>
 		</header>
 	);
 }
